@@ -33,7 +33,6 @@ with steps[0]:
               delta=str(sum(id1['Rebotes']))+'Número de rebotes', delta_color='inverse')
     m2.metric(label= 'Metrica 2', value= np.mean(id1['Clics']),delta=str(np.mean(id1['Impresiones']))+'Número de rebotes', delta_color='inverse')
 
-    st.pyplot(fig)
 with steps[1]:
     df = pd.read_csv("https://raw.githubusercontent.com/diplomado-bigdata-machinelearning-udea/Curso1/master/s03/dataVentas2009.csv")
     df.Fecha = pd.to_datetime(df.Fecha, format='%d/%m/%Y')
