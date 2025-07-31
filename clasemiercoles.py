@@ -44,4 +44,4 @@ with steps[1]:
     fig, ax = plt.subplots()
     ax = sns.histplot(data = df, x=varx)
     
-    
+    st.pyplot(fig)
